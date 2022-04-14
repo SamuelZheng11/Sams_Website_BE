@@ -1,5 +1,5 @@
 using Sams_Website_BE.Model;
-using Sams_Website_BE.Dto
+using Sams_Website_BE.Dto;
 
 namespace Sams_Website_BE
 {
