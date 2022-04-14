@@ -25,3 +25,14 @@ C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\obj\Debug\net6.0\refint\Sams_Websit
 C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\obj\Debug\net6.0\Sams_Website_BE.pdb
 C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\obj\Debug\net6.0\Sams_Website_BE.genruntimeconfig.cache
 C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\obj\Debug\net6.0\ref\Sams_Website_BE.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.Extensions.Http.Polly.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Polly.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\Polly.Extensions.Http.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website_BE\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
