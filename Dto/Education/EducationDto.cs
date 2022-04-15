@@ -1,11 +1,11 @@
-namespace Sams_Website_BE.Dto {
+namespace Sams_Website_BE.Dto.Education {
     public class EducationDto
     {
         public Guid Id { get; set; }
 
-        public DateTime StartDate { get; set; }
+        public DateTimeOffset StartDate { get; set; }
 
-        public DateTime EndDate { get; set; }
+        public DateTimeOffset? EndDate { get; set; }
 
         public string? InstitutionName { get; set; }
 

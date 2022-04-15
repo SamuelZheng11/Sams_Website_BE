@@ -1,4 +1,10 @@
+using MongoDB.Driver;
+using Sams_Website_BE.Model.Education;
+using Sams_Website_BE.Repositories;
+using Sams_Website_BE.Settings;
+
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Host.ConfigureLogging((context, logging) => 
 {
     if (context.HostingEnvironment.IsProduction()) 
@@ -8,10 +14,17 @@ builder.Host.ConfigureLogging((context, logging) =>
     }
 });
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Add services to the container.
+builder.Host.ConfigureServices((IServiceCollection services) => {
+    // Add Controllers
+    services.AddControllers();
+    services.AddMongo()
+            .AddMongoRepository<Education>("Education");
+});
+
+
+// Add Swagger setup
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

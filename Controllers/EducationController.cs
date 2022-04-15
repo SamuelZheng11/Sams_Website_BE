@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Sams_Website_BE;
-using Sams_Website_BE.Model;
-using Sams_Website_BE.Repository;
+using Sams_Website_BE.Model.Education;
+using Sams_Website_BE.Dto.Education;
+using Sams_Website_BE.Repositories;
 
 namespace Sams_Website_BE.Controllers;
 
@@ -10,40 +10,25 @@ namespace Sams_Website_BE.Controllers;
 public class EducationController : ControllerBase
 {
     private readonly ILogger<EducationController> _logger;
-    private readonly EducationRepository _educationRepository = new();
-    private static readonly List<Education> _educations = new() {
-        new Education() 
-        {
-            StartDate = new DateTime(1456657200),
-            EndDate = new DateTime(1574161200),
-            InstitutionName = "University of Auckland",
-            InstitutionShortHand = "UoA",
-            Summaries = new string[] {
-                "In 2019 I graduated from the University of Auckland Specializing in Software Engineering.",
-                "During my tenure I studied a variety of subjects ranging from operating systems, software design and architecture, mobile security, algorithm and data structures, software development methodologies, image processing and artificial intelligence"            },
-            Achievements = new string[] {
-                "Dean's Honours List class of 2019 (Top 5% of their year of study)",
-                "First in class SOFTENG 762: Robotics Process Automation", "First Class Honours",
-                "GPA of 7.3/9.0"
-            },
-        }
-    };
+    private readonly IRepository<Education> _educationRepository;
 
-    public EducationController(ILogger<EducationController> logger)
+    public EducationController(ILogger<EducationController> logger, IRepository<Education> educationRepository)
     {
         _logger = logger;
+        _educationRepository = educationRepository;
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Education>>> Get()
+    public async Task<ActionResult<IEnumerable<EducationDto>>> Get()
     {
-        var educations = (await _educationRepository.GetAllAsync())
-                            .Select(education => education.AsEducationModel());
-        return _educations;
+
+        var educations = (await _educationRepository.GetAllAsync()).Select(education => education.AsEducationDto());
+
+        return Ok(educations);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Education>> GetById(Guid id)
+    public async Task<ActionResult<EducationDto>> GetById(Guid id)
     {
         if (id.ToString() == null) {
             BadRequest();
@@ -55,6 +40,29 @@ public class EducationController : ControllerBase
             NotFound();
         }
 
-        return Ok(education!.AsEducationModel());
+        return Ok(education!.AsEducationDto());
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<EducationDto>> Post(CreateEducation educationToCreate) {
+        if (educationToCreate == null) {
+            return BadRequest();
+        }
+
+        var item = new DateTime(educationToCreate.EndDate);
+
+        var persistedEducation = await _educationRepository.CreateAsync(
+            new Education()
+            {
+                Achievements = educationToCreate.Achievements,
+                EndDate = educationToCreate.EndDate > 0 ? DateTimeOffset.FromUnixTimeSeconds(educationToCreate.EndDate) : null,
+                StartDate = DateTimeOffset.FromUnixTimeSeconds(educationToCreate.StartDate),
+                InstitutionName = educationToCreate.InstitutionName,
+                InstitutionShortHand = educationToCreate.InstitutionShortHand,
+                Summaries = educationToCreate.Summaries,
+            }
+        );
+
+        return CreatedAtAction(nameof(Education), new { Id = persistedEducation.Id }, persistedEducation.AsEducationDto());
     }
 }
