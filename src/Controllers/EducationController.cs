@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Sams_Website_BE.Model.Education;
-using Sams_Website_BE.Dto.Education;
-using Sams_Website_BE.Repositories;
+using SamsWebsite.BackEnd.Model.Education;
+using SamsWebsite.BackEnd.Dto.Education;
+using SamsWebsite.Common;
 
-namespace Sams_Website_BE.Controllers;
+namespace SamsWebsite.BackEnd.Controllers;
 
 [ApiController]
 [Route("[controller]")]

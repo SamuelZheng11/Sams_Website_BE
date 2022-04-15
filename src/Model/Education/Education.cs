@@ -1,4 +1,6 @@
-namespace Sams_Website_BE.Model.Education
+using SamsWebsite.Common;
+
+namespace SamsWebsite.BackEnd.Model.Education
 {
     public class Education : IEntity
     {

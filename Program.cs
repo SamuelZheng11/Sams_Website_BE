@@ -1,7 +1,5 @@
-using MongoDB.Driver;
-using Sams_Website_BE.Model.Education;
-using Sams_Website_BE.Repositories;
-using Sams_Website_BE.Settings;
+using SamsWebsite.BackEnd.Model.Education;
+using SamsWebsite.Common.MongoDB;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "JlNeoF9HvByElX5AaUtoFqYgdpvyqQa/n/Iq0xQne7o=",
-  "Source": "Sams_Website_BE",
-  "BasePath": "_content/Sams_Website_BE",
+  "Hash": "S47tbUQvYb5icEByYgGh5APQOms0gdEyYNJhKWKi7Q0=",
+  "Source": "SamsWebsite.BackEnd",
+  "BasePath": "_content/SamsWebsite.BackEnd",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

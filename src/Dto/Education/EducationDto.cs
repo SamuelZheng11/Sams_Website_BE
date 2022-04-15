@@ -1,4 +1,4 @@
-namespace Sams_Website_BE.Dto.Education {
+namespace SamsWebsite.BackEnd.Dto.Education {
     public class EducationDto
     {
         public Guid Id { get; set; }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website_BE\\Sams_Website_BE.csproj": {}
+    "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website_BE\\Sams_Website_BE.csproj": {
+    "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website_BE\\Sams_Website_BE.csproj",
-        "projectName": "Sams_Website_BE",
-        "projectPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website_BE\\Sams_Website_BE.csproj",
+        "projectUniqueName": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
+        "projectName": "SamsWebsite.BackEnd",
+        "projectPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
         "packagesPath": "C:\\Users\\DELL 7480\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website_BE\\obj\\",
+        "outputPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL 7480\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\dist": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,9 +51,9 @@
               "target": "Package",
               "version": "[6.0.4, )"
             },
-            "MongoDB.Driver": {
+            "SamsWebsite.Common": {
               "target": "Package",
-              "version": "[2.15.0, )"
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

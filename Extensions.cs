@@ -1,7 +1,7 @@
-using Sams_Website_BE.Model.Education;
-using Sams_Website_BE.Dto.Education;
+using SamsWebsite.BackEnd.Model.Education;
+using SamsWebsite.BackEnd.Dto.Education;
 
-namespace Sams_Website_BE
+namespace SamsWebsite.BackEnd
 {
     public static class Extensions 
     {

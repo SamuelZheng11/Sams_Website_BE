@@ -1,4 +1,4 @@
-namespace Sams_Website_BE.Model.Education {
+namespace SamsWebsite.BackEnd.Model.Education {
     public class CreateEducation
     {
         public long StartDate { get; set; }
