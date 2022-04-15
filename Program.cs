@@ -12,15 +12,14 @@ builder.Host.ConfigureLogging((context, logging) =>
     }
 });
 
-
 // Add services to the container.
 builder.Host.ConfigureServices((IServiceCollection services) => {
     // Add Controllers
     services.AddControllers();
+    
     services.AddMongo()
             .AddMongoRepository<Education>("Education");
 });
-
 
 // Add Swagger setup
 builder.Services.AddEndpointsApiExplorer();
