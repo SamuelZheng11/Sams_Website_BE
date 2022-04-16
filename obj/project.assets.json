@@ -1763,11 +1763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
       "projectName": "SamsWebsite.BackEnd",
-      "projectPath": "c:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
+      "projectPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
       "packagesPath": "C:\\Users\\DELL 7480\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\obj\\",
+      "outputPath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL 7480\\AppData\\Roaming\\NuGet\\NuGet.Config"

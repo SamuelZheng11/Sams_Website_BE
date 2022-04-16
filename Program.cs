@@ -1,4 +1,4 @@
-using SamsWebsite.BackEnd.Model.Education;
+using SamsWebsite.BackEnd.Model;
 using SamsWebsite.Common.MongoDB;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,10 +15,14 @@ builder.Host.ConfigureLogging((context, logging) =>
 // Add services to the container.
 builder.Host.ConfigureServices((IServiceCollection services) => {
     // Add Controllers
-    services.AddControllers();
+    services.AddControllers(options => 
+    {
+        options.SuppressAsyncSuffixInActionNames = false;
+    });
     
     services.AddMongo()
-            .AddMongoRepository<Education>("Education");
+            .AddMongoRepository<Education>("Education")
+            .AddMongoRepository<Project>("Projects");
 });
 
 // Add Swagger setup

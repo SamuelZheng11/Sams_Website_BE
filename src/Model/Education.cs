@@ -1,6 +1,6 @@
 using SamsWebsite.Common;
 
-namespace SamsWebsite.BackEnd.Model.Education
+namespace SamsWebsite.BackEnd.Model
 {
     public class Education : IEntity
     {

@@ -1,5 +1,5 @@
-namespace SamsWebsite.BackEnd.Model.Education {
-    public class CreateEducation
+namespace SamsWebsite.BackEnd.Dto.Education {
+    public class CreateEducationDto
     {
         public long StartDate { get; set; }
 
