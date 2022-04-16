@@ -50,7 +50,7 @@ namespace SamsWebsite.BackEnd.Controllers
                 return BadRequest();
             }
 
-            var persistedEducation = await _projectRepository.CreateAsync(
+            var persistedProject = await _projectRepository.CreateAsync(
                 new Project()
                 {
                     EndDate = projectToCreate.EndDate > 0 ? DateTimeOffset.FromUnixTimeSeconds(projectToCreate.EndDate) : null,
@@ -61,7 +61,7 @@ namespace SamsWebsite.BackEnd.Controllers
                 }
             );
 
-            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedEducation.Id }, persistedEducation.AsProjectDto());
+            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedProject.Id }, persistedProject.AsProjectDto());
         }
 
         [HttpDelete("id")]

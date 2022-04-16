@@ -22,7 +22,6 @@ C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\Mongo
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\Polly.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\Polly.Extensions.Http.dll
-C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\SamsWebsite.Common.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\SharpCompress.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -54,3 +53,4 @@ C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\obj\Debug\net6.0\refin
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\obj\Debug\net6.0\SamsWebsite.BackEnd.pdb
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\obj\Debug\net6.0\SamsWebsite.BackEnd.genruntimeconfig.cache
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\obj\Debug\net6.0\ref\SamsWebsite.BackEnd.dll
+C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\bin\Debug\net6.0\SamsWebsite.Common.dll

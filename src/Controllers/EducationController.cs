@@ -18,7 +18,7 @@ namespace SamsWebsite.BackEnd.Controllers {
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EducationDto>>> Get()
+        public async Task<ActionResult<IEnumerable<EducationDto>>> GetAsync()
         {
 
             var educations = (await _educationRepository.GetAllAsync()).Select(education => education.AsEducationDto());
@@ -27,7 +27,7 @@ namespace SamsWebsite.BackEnd.Controllers {
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<EducationDto>> GetById(Guid id)
+        public async Task<ActionResult<EducationDto>> GetByIdAsync(Guid id)
         {
             if (id == Guid.Empty) {
                 BadRequest();
@@ -43,7 +43,7 @@ namespace SamsWebsite.BackEnd.Controllers {
         }
 
         [HttpPost]
-        public async Task<ActionResult<EducationDto>> Post(CreateEducationDto educationToCreate) {
+        public async Task<ActionResult<EducationDto>> PostAsync(CreateEducationDto educationToCreate) {
             if (educationToCreate == null) {
                 return BadRequest();
             }
@@ -60,7 +60,7 @@ namespace SamsWebsite.BackEnd.Controllers {
                 }
             );
 
-            return CreatedAtAction(nameof(Education), new { Id = persistedEducation.Id }, persistedEducation.AsEducationDto());
+            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedEducation.Id }, persistedEducation.AsEducationDto());
         }
 
         [HttpDelete("id")]

@@ -22,7 +22,7 @@ builder.Host.ConfigureServices((IServiceCollection services) => {
     
     services.AddMongo()
             .AddMongoRepository<Education>("Education")
-            .AddMongoRepository<Project>("Projects");
+            .AddMongoRepository<Project>("Project");
 });
 
 // Add Swagger setup
