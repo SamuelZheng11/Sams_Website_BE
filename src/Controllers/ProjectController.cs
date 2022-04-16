@@ -61,7 +61,11 @@ namespace SamsWebsite.BackEnd.Controllers
                 }
             );
 
-            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedProject.Id }, persistedProject.AsProjectDto());
+            if (persistedProject == null) {
+                StatusCode(500);
+            }
+
+            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedProject!.Id }, persistedProject.AsProjectDto());
         }
 
         [HttpDelete("id")]

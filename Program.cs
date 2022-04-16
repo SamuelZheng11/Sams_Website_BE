@@ -14,15 +14,15 @@ builder.Host.ConfigureLogging((context, logging) =>
 
 // Add services to the container.
 builder.Host.ConfigureServices((IServiceCollection services) => {
+    services.AddMongo()
+            .AddMongoRepository<Education>("Education")
+            .AddMongoRepository<Project>("Project");
+
     // Add Controllers
     services.AddControllers(options => 
     {
         options.SuppressAsyncSuffixInActionNames = false;
     });
-    
-    services.AddMongo()
-            .AddMongoRepository<Education>("Education")
-            .AddMongoRepository<Project>("Project");
 });
 
 // Add Swagger setup

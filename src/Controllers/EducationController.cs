@@ -60,7 +60,11 @@ namespace SamsWebsite.BackEnd.Controllers {
                 }
             );
 
-            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedEducation.Id }, persistedEducation.AsEducationDto());
+            if (persistedEducation == null) {
+                StatusCode(500);
+            }
+
+            return CreatedAtAction(nameof(GetByIdAsync), new { Id = persistedEducation!.Id }, persistedEducation.AsEducationDto());
         }
 
         [HttpDelete("id")]

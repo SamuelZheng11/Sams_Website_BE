@@ -47,13 +47,17 @@
               "target": "Package",
               "version": "[6.0.4, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
               "version": "[6.0.4, )"
             },
             "SamsWebsite.Common": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[1.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

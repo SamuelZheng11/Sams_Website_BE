@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DyXqgkYnNVprO+AYXvIpz0r07i3YAFLF4uz0nyKDuV5TBVMongY0dbjOdNaKuiON2zFw6oj4WZpZY8TdcQ/E7A==",
+  "dgSpecHash": "Y9puoHcQ/TyrQrlo4OtNDTYWj4KymyN6DRMq/xruKG7yiMMB2q80sKsbw+aNgdgGjB0iJzgnnxAuXacXiErdMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\SamsWebsite.BackEnd.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "C:\\Users\\DELL 7480\\.nuget\\packages\\mongodb.libmongocrypt\\1.3.0\\mongodb.libmongocrypt.1.3.0.nupkg.sha512",
     "C:\\Users\\DELL 7480\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
     "C:\\Users\\DELL 7480\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
-    "C:\\Users\\DELL 7480\\.nuget\\packages\\samswebsite.common\\1.0.0\\samswebsite.common.1.0.0.nupkg.sha512",
+    "C:\\Users\\DELL 7480\\.nuget\\packages\\samswebsite.common\\1.0.1\\samswebsite.common.1.0.1.nupkg.sha512",
     "C:\\Users\\DELL 7480\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\DELL 7480\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\DELL 7480\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

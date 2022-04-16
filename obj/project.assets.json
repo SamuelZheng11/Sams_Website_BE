@@ -448,7 +448,7 @@
           "lib/netstandard2.0/Polly.Extensions.Http.dll": {}
         }
       },
-      "SamsWebsite.Common/1.0.0": {
+      "SamsWebsite.Common/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -1374,14 +1374,14 @@
         "polly.extensions.http.nuspec"
       ]
     },
-    "SamsWebsite.Common/1.0.0": {
-      "sha512": "ff8T5ozlC9QIQvsuhFmua4Xl+mhPvFi/Zgc8LzXHR3JilzKtBmhTaWMoO78INwi8Mhq0Di2GWAulcB+D3lyZUQ==",
+    "SamsWebsite.Common/1.0.1": {
+      "sha512": "dCVyB6M4q37FVIwvaHFM4MRH2WFDDe/JVxsOPCgxlQx7EIQtWDYQhhrdnEG7H+8vq1A+3BGydAnBkEdsyVuOsw==",
       "type": "package",
-      "path": "samswebsite.common/1.0.0",
+      "path": "samswebsite.common/1.0.1",
       "files": [
         ".nupkg.metadata",
         "lib/net6.0/SamsWebsite.Common.dll",
-        "samswebsite.common.1.0.0.nupkg.sha512",
+        "samswebsite.common.1.0.1.nupkg.sha512",
         "samswebsite.common.nuspec"
       ]
     },
@@ -1752,8 +1752,9 @@
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.4",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 6.0.4",
+      "Microsoft.Extensions.Http >= 6.0.0",
       "Microsoft.Extensions.Http.Polly >= 6.0.4",
-      "SamsWebsite.Common >= 1.0.0",
+      "SamsWebsite.Common >= 1.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1803,13 +1804,17 @@
             "target": "Package",
             "version": "[6.0.4, )"
           },
+          "Microsoft.Extensions.Http": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Microsoft.Extensions.Http.Polly": {
             "target": "Package",
             "version": "[6.0.4, )"
           },
           "SamsWebsite.Common": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
