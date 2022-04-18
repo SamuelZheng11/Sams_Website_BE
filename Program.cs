@@ -30,10 +30,7 @@ builder.Host.ConfigureServices((IServiceCollection services) => {
         options.AddPolicy(name: AllowedOriginSetting,
         policy  =>
         {
-            policy.WithOrigins(
-                        "http://localhost:3000",
-                        "https://localhost:3000"
-                    )
+            policy.AllowAnyOrigin()
                     .AllowAnyHeader()
                     .AllowAnyMethod();
         })
