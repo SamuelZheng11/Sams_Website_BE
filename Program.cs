@@ -3,6 +3,8 @@ using SamsWebsite.Common.MongoDB;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var AllowedOriginSetting = "AllowedOriginSetting";
+
 builder.Host.ConfigureLogging((context, logging) => 
 {
     if (context.HostingEnvironment.IsProduction()) 
@@ -23,6 +25,19 @@ builder.Host.ConfigureServices((IServiceCollection services) => {
     {
         options.SuppressAsyncSuffixInActionNames = false;
     });
+
+    services.AddCors(options => 
+        options.AddPolicy(name: AllowedOriginSetting,
+        policy  =>
+        {
+            policy.WithOrigins(
+                        "http://localhost:3000",
+                        "https://localhost:3000"
+                    )
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+        })
+    );
 });
 
 // Add Swagger setup
@@ -38,6 +53,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    app.UseCors(AllowedOriginSetting);
 }
 
 app.UseHttpsRedirection();
