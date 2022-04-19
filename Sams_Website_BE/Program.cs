@@ -18,7 +18,7 @@ builder.Host.ConfigureLogging((context, logging) =>
 
 // Add services to the container.
 builder.Host.ConfigureServices((IServiceCollection services) => {
-        services.AddMongo(true)
+        services.AddMongo(builder.Environment.IsProduction())
         .AddMongoRepository<EducationModel>("Education")
         .AddMongoRepository<ProjectModel>("Project");
 
