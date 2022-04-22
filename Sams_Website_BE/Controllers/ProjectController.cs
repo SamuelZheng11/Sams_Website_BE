@@ -9,10 +9,10 @@ namespace SamsWebsite.BackEnd.Controllers
     [Route("[controller]")]
     public class ProjectController : ControllerBase
     {
-        private readonly ILogger<EducationController> _logger;
+        private readonly ILogger<ProjectController> _logger;
         private readonly IRepository<ProjectModel> _projectRepository;
 
-        public ProjectController(ILogger<EducationController> logger, IRepository<ProjectModel> projectRepository)
+        public ProjectController(ILogger<ProjectController> logger, IRepository<ProjectModel> projectRepository)
         {
             _logger = logger;
             _projectRepository = projectRepository;
@@ -22,9 +22,9 @@ namespace SamsWebsite.BackEnd.Controllers
         public async Task<ActionResult<IEnumerable<ProjectDto>>> GetAsync()
         {
 
-            var educations = (await _projectRepository.GetAllAsync()).Select(education => education.AsProjectDto());
+            var projects = (await _projectRepository.GetAllAsync()).Select(project => project.AsProjectDto());
 
-            return Ok(educations);
+            return Ok(projects);
         }
 
         [HttpGet("{id}")]
@@ -34,13 +34,13 @@ namespace SamsWebsite.BackEnd.Controllers
                 BadRequest();
             }
 
-            var education = await _projectRepository.GetAsync(id);
+            var project = await _projectRepository.GetAsync(id);
 
-            if (education == null) {
+            if (project == null) {
                 NotFound();
             }
 
-            return Ok(education!.AsProjectDto());
+            return Ok(project!.AsProjectDto());
         }
 
         [HttpPost]

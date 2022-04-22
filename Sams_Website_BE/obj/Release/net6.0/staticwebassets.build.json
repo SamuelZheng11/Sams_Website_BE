@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wdWbt4lZ5ovfExVE4ImmQBWkOpSlgVgaSrIKTpNLDps=",
+  "Hash": "G5dDqvMRbN/FcTBaTAbTwXVZMx5tAODQ6DUcAyEi9h8=",
   "Source": "Sams_Website_BE",
   "BasePath": "_content/Sams_Website_BE",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\bundle\\Sams_Website_BE.styles.css",
-      "SourceId": "Sams_Website_BE",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Sams_Website_BE",
-      "RelativePath": "Sams_Website_BE.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\bundle\\Sams_Website_BE.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Sams_Website_BE.bundle.scp.css",
-      "SourceId": "Sams_Website_BE",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Sams_Website_BE",
-      "RelativePath": "Sams_Website_BE.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Sams_Website_BE.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\DELL 7480\\CodeRepos\\Sams_Website\\Sams_Website_BE\\Sams_Website_BE\\wwwroot\\css\\site.css",
       "SourceId": "Sams_Website_BE",

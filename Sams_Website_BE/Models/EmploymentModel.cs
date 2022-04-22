@@ -2,7 +2,7 @@ using SamsWebsite.Common;
 
 namespace SamsWebsite.BackEnd.Models
 {
-    public class EducationModel : IEntity
+    public class EmploymentModel : IEntity
     {
         public Guid Id { get; set; }
 
@@ -10,14 +10,10 @@ namespace SamsWebsite.BackEnd.Models
 
         public DateTimeOffset? EndDate { get; set; }
 
-        public string? InstitutionName { get; set; }
+        public string? Employer { get; set; }
 
-        public string? InstitutionShortHand { get; set; }
-
-        public string? InstitutionWebsite { get; set; }
+        public string? EmployerWebsite { get; set; }
 
         public string[]? Summaries { get; set; }
-
-        public string[]? Achievements { get; set; }
     }
 }

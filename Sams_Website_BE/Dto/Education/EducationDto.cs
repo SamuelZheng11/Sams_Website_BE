@@ -11,6 +11,8 @@ namespace SamsWebsite.BackEnd.Dto.Education {
 
         public string? InstitutionShortHand { get; set; }
 
+        public string? InstitutionWebsite { get; set; }
+
         public string[]? Summaries { get; set; }
 
         public string[]? Achievements { get; set; }

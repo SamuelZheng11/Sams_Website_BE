@@ -46,13 +46,9 @@ C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Re
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.csproj.CoreCompileInputs.cache
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.RazorAssemblyInfo.cache
-C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.RazorAssemblyInfo.cs
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\staticwebassets.build.json
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\staticwebassets.development.json
-C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\scopedcss\bundle\Sams_Website_BE.styles.css
-C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\scopedcss\projectbundle\Sams_Website_BE.bundle.scp.css
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.csproj.CopyComplete
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\Sams_Website_BE.dll
 C:\Users\DELL 7480\CodeRepos\Sams_Website\Sams_Website_BE\Sams_Website_BE\obj\Release\net6.0\refint\Sams_Website_BE.dll

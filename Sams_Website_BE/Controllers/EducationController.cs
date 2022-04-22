@@ -55,6 +55,7 @@ namespace SamsWebsite.BackEnd.Controllers {
                     StartDate = DateTimeOffset.FromUnixTimeSeconds(educationToCreate.StartDate),
                     InstitutionName = educationToCreate.InstitutionName,
                     InstitutionShortHand = educationToCreate.InstitutionShortHand,
+                    InstitutionWebsite = educationToCreate.InstitutionWebsite,
                     Summaries = educationToCreate.Summaries,
                 }
             );

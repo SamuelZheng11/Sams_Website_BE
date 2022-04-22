@@ -18,9 +18,11 @@ builder.Host.ConfigureLogging((context, logging) =>
 
 // Add services to the container.
 builder.Host.ConfigureServices((IServiceCollection services) => {
-        services.AddMongo(builder.Environment.IsProduction())
+        services.AddMongo(true)
         .AddMongoRepository<EducationModel>("Education")
-        .AddMongoRepository<ProjectModel>("Project");
+        .AddMongoRepository<EmploymentModel>("Employment")
+        .AddMongoRepository<ProjectModel>("Project")
+        .AddMongoRepository<BioModel>("Bio");
 
     // Add Controllers
     services.AddControllers(options =>
@@ -49,18 +51,12 @@ builder.Services.AddHealthChecks();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
 app.UseSwagger();
 
 app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
+// need to ignore this due to ssl certs
+// app.UseHttpsRedirection();
 
 app.UseCors(AllowedOriginSetting);
 
