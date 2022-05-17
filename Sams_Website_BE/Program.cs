@@ -34,7 +34,7 @@ builder.Host.ConfigureServices((IServiceCollection services) => {
         options.AddPolicy(name: AllowedOriginSetting,
         policy =>
         {
-            policy.WithOrigins("https://samuelzheng.com")
+            policy.WithOrigins(builder.Configuration["AllowedHosts"])
                     .AllowAnyHeader()
                     .AllowAnyMethod();
         })
